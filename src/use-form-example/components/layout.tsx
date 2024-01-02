@@ -8,6 +8,7 @@ const initialValues = {
 
 export function Form() {
   const { append, values, errors } = useForm<typeof initialValues>(initialValues, {
+    mode: "onBlur",
     resolver: {
       age(value) {
         if (value < 18) return { message: "Você precisa ter mais de 18 anos." };
