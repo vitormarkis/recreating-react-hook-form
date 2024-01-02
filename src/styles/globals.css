@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black;
+}
+
+body #__next>div {
+  @apply flex flex-col justify-center gap-8 min-h-screen max-w-xs mx-auto;
+}
+
+pre {
+  @apply border border-indigo-400 bg-indigo-500 text-white rounded-md p-4;
+}
+
+form {
+  @apply flex flex-col gap-2;
+}
+
+input {
+  @apply h-11 border border-neutral-800 bg-neutral-900 rounded-md px-2 text-white placeholder:text-neutral-500 focus:ring-1 focus:ring-neutral-600 focus:outline-none;
+}
+
+span {
+  @apply text-xs/none py-2 px-4 bg-red-600/30 text-red-300 rounded-md;
+}
